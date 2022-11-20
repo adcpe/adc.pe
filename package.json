@@ -1,0 +1,23 @@
+{
+  "name": "adcdotpe",
+  "description": "My personal website hosted at adc.pe and andresdc.net.",
+  "scripts": {
+    "dev": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "keywords": [
+    "website",
+    "blog",
+    "11ty",
+    "eleventy",
+    "pug"
+  ],
+  "author": "Andrés Del Carpio",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.2"
+  },
+  "dependencies": {
+    "axios": "^1.1.3"
+  }
+}

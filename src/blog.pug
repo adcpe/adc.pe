@@ -1,0 +1,10 @@
+---
+title: 'Blog | adc.pe'
+---
+extends _includes/base.pug
+
+block content
+  ul
+    each post in collections.posts.reverse()
+      li: a(href=`/blog/${post.data.id}-${post.data.slug}/`)= post.data.title
+  
