@@ -7,7 +7,7 @@ block scripts
   link(rel="stylesheet", href=`../assets/css/main.css`)
 
 block content
-  ul
-    each post in collections.posts.reverse()
-      li: a(href=`/blog/${post.data.id}-${post.data.slug}/`)= post.data.title
-  
+  section.content
+    ul
+      each post in collections.posts.reverse()
+        li: a(href=`/blog/${post.data.id}-${post.data.slug}/`)= post.data.title
