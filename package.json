@@ -7,6 +7,7 @@
     "watch:11ty": "eleventy --serve",
     "build:11ty": "eleventy",
     "build": "pnpm build:stylus && pnpm build:11ty",
+    "preview": "pnpm dlx serve dist",
     "dev": "concurrently -n stylus,11ty \"pnpm watch:stylus\" \"pnpm watch:11ty\""
   },
   "keywords": [
