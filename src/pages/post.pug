@@ -14,7 +14,10 @@ eleventyComputed:
   slug: "{{ post.data.slug }}"
   date: "{{ post.data.date }}"
 ---
-extends _includes/base.pug
+extends ../layouts/base.pug
+
+block scripts
+  link(rel="stylesheet", href=`../../assets/css/main.css`)
 
 block content
   body= post.content

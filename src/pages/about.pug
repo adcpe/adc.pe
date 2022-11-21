@@ -1,7 +1,10 @@
 ---
 title: 'About | adc.pe'
 ---
-extends _includes/base.pug
+extends ../layouts/base.pug
+
+block scripts
+  link(rel="stylesheet", href=`../assets/css/main.css`)
 
 block content
   h1 About
