@@ -1,6 +1,6 @@
 module.exports = (eleventyConfig) => {
   eleventyConfig.addWatchTarget('./src/assets/stylus/')
-  eleventyConfig.addPassthroughCopy({'./assets/css/': 'css'})
+  eleventyConfig.addPassthroughCopy('./src/assets/css/')
 
   return {
     dir: {
