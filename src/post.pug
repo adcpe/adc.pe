@@ -20,4 +20,6 @@ block scripts
   link(rel="stylesheet", href=`../../assets/css/main.css`)
 
 block content
-  body= post.content
+  h1= post.data.title
+  h2= post.data.date
+  div= post.content
