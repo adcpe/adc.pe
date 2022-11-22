@@ -1,8 +1,0 @@
-section.navbar
-  div.link-group
-    each link in links
-      - const linkClass = 'navbar-link'
-      - const linkClassActive = linkClass + ' navbar-link__active'
-      - const linkClassName = page.url.slice(1, 4) === link.to.slice(1, 4) ? linkClassActive : linkClass
-      div
-        a(href=link.to class=linkClassName)= link.name

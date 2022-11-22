@@ -1,0 +1,11 @@
+header.navbar
+  nav.link-group
+    ul
+      li: a(href='/' class='logo') adc.pe
+  nav.link-group
+      ul
+        each link in links
+          - const linkClass = 'navbar-link'
+          - const linkClassActive = linkClass + ' navbar-link__active'
+          - const linkClassName = page.url.slice(1, 4) === link.to.slice(1, 4) ? linkClassActive : linkClass
+          li: a(href=link.to class=linkClassName) #{link.name}

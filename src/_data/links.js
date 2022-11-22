@@ -1,7 +1,7 @@
 module.exports = [
-  { name: 'Home', to: '/' },
+  // { name: 'Home', to: '/' },
   { name: 'About', to: '/about/' },
-  { name: 'Blog', to: '/blog/' }
   // { name: 'Projects', to: '/projects' },
+  { name: 'Blog', to: '/blog/' }
   // { name: 'FAQ', to: '/faq' }
 ]
