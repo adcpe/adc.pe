@@ -2,13 +2,13 @@
   "name": "adcdotpe",
   "description": "My personal website hosted at adc.pe and andresdc.net.",
   "scripts": {
-    "watch-stylus": "stylus --watch ./src/assets/stylus/ --out ./src/assets/css/",
-    "build-stylus": "stylus --compress ./src/assets/stylus/ --out ./src/assets/css/",
+    "watch-sass": "sass src/assets/sass/:src/assets/css/ --watch --poll",
+    "build-sass": "sass src/assets/sass/:src/assets/css/ --style=compressed",
     "watch-11ty": "eleventy --serve",
     "build-11ty": "eleventy",
-    "build": "pnpm build-stylus && pnpm build-11ty",
+    "build": "pnpm build-sass && pnpm build-11ty",
     "preview": "pnpm dlx serve dist",
-    "dev": "concurrently pnpm:watch-stylus pnpm:watch-11ty"
+    "dev": "concurrently pnpm:watch-sass pnpm:watch-11ty"
   },
   "keywords": [
     "website",
@@ -23,6 +23,7 @@
     "@11ty/eleventy": "^1.0.2",
     "axios": "^1.1.3",
     "concurrently": "^7.6.0",
+    "sass": "^1.56.1",
     "stylus": "^0.59.0"
   }
 }
