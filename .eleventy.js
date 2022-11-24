@@ -4,6 +4,7 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addWatchTarget('./src/assets/stylus/')
   eleventyConfig.addPassthroughCopy('./src/assets/css/')
   eleventyConfig.addPassthroughCopy('./src/assets/fa/')
+  eleventyConfig.addPassthroughCopy('./src/assets/prism/')
 
   global.filters = eleventyConfig.javascriptFunctions
 
