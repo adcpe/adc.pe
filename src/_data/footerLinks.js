@@ -1,12 +1,12 @@
 module.exports = [
   {
     name: 'Github',
-    class: 'fa-brands fa-github',
+    class: 'fa-github',
     to: 'https://github.com/adcpe'
   },
   {
     name: 'Gitlab',
-    class: 'fa-brands fa-gitlab',
+    class: 'fa-gitlab',
     to: 'https://gitlab.com/adcpe'
   }
 ]
