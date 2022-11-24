@@ -1,8 +1,5 @@
 @import 'fonts'
-
-$black: #222222
-$red: #C33200
-$green: #034923
+@import 'variables'
 
 :root
   font-family: 'Varela Round', sans-serif
@@ -91,6 +88,7 @@ main
 .inline-link
   font-size: 20px
   color: $red
+  text-decoration: none
 
 .inline-link:hover
   color: $green
@@ -115,8 +113,8 @@ main
 footer
   display: flex
   justify-content: center
-  margin: 1rem auto
-  position: absolute
+  margin: 3rem auto 1rem
+  position: relative
   bottom: 0
   left: 0
   right: 0
