@@ -1,9 +1,19 @@
 @import 'fonts'
 
+$black: #222222
+$red: #C33200
+$green: #034923
+
 :root
   font-family: 'Varela Round', sans-serif
   background: #CAD9AC40
-  color: #222222
+  color: $black
+
+body
+  min-height: 100vh
+  margin: 0
+  padding: 0
+  box-sizing: content-box
 
 .font-alt
   font-family: 'Outfit', sans-serif
@@ -17,7 +27,7 @@
   list-style: none
   font-size: 1.8rem
   height: 100%
-  color: #C33200
+  color: $red
   text-decoration: none
   font-weight: 900
 
@@ -28,7 +38,7 @@ main
   display: flex
 
 .navbar
-  margin: 2rem auto 0
+  margin: 0 auto 2rem
   max-width: 1024px
   line-height: 3.5em
   overflow: hidden
@@ -80,24 +90,40 @@ main
 
 .inline-link
   font-size: 20px
-  color: #C33200
+  color: $red
 
 .inline-link:hover
-  color: #034923
+  color: $green
   text-decoration: underline
   text-decoration-thickness: 2px
 
 .navbar-link
   font-size: 22px
-  color: #034923
+  color: $green
   margin: 1em auto
   text-decoration: none
 
 .navbar-link:hover
-  color: #C33200
+  color: $red
   text-decoration: underline
   text-decoration-thickness: 2px
 
 .navbar-link__active
   text-decoration: underline
   text-decoration-thickness: 2px
+
+footer
+  display: flex
+  justify-content: center
+  margin: 1rem auto
+  position: absolute
+  bottom: 0
+  left: 0
+  right: 0
+
+  & i
+    color: $red
+    margin: 0 10px
+
+  & i:hover
+    color: $green
