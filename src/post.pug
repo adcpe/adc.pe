@@ -18,8 +18,7 @@ extends _includes/base.pug
 
 block scripts
   title #{post.data.title} | adc.pe
-  link(rel="stylesheet", href=`../../assets/css/main.css`)
-  link(rel="stylesheet", href=`../../assets/css/content.css`)
+  link(rel="stylesheet", href=`${filters.relativePath(page)}assets/css/content.css`)
 
 block content
   section.post
