@@ -64,15 +64,21 @@ main
   flex-direction: column
   justify-content: center
   align-content: center
-
-.content div
-  font-size: 1.25rem
-  line-height: 1.75rem
-  margin-top: 0.875rem
-
-.content div p
-  margin-top: 0.75rem
-  margin-bottom: 0.75rem
+  & div
+    font-size: 1.25rem
+    line-height: 1.75rem
+    margin-top: 0.875rem
+    & p
+      margin-top: 0.75rem
+      margin-bottom: 0.75rem
+    & a
+      font-size: 20px
+      color: $red
+      text-decoration: none
+    & a:hover
+      color: $green
+      text-decoration: underline
+      text-decoration-thickness: 2px
 
 .title
   margin-top: 0
@@ -87,16 +93,6 @@ main
   font-weight: 600
   opacity: 0.75
   margin-bottom: 0.75rem
-
-.inline-link
-  font-size: 20px
-  color: $red
-  text-decoration: none
-
-.inline-link:hover
-  color: $green
-  text-decoration: underline
-  text-decoration-thickness: 2px
 
 .navbar-link
   font-size: 22px
