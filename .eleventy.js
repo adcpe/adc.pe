@@ -1,7 +1,7 @@
 const relativePath = require('./src/utils/relativePath')
 
 module.exports = (eleventyConfig) => {
-  eleventyConfig.addWatchTarget('./src/assets/stylus/')
+  eleventyConfig.addWatchTarget('./src/assets/sass/')
   eleventyConfig.addPassthroughCopy('./src/assets/css/')
   eleventyConfig.addPassthroughCopy('./src/assets/fa/')
   eleventyConfig.addPassthroughCopy('./src/assets/prism/')
