@@ -3,6 +3,17 @@ title: 'About | adc.pe'
 ---
 extends _includes/base.pug
 
+block scripts
+  meta(property='og:title' content=title)
+  meta(property='og:site_name' content=title)
+  meta(property='og:description' content='About page of adc.pe')
+  meta(property='og:type' content='website')
+  meta(property='og:url' content='https://adc.pe/about/')
+  //- meta(property='og:image' content='[image]')
+  meta(name='twitter:card' content='summary')
+  meta(name="twitter:site" content="@adcpe_")
+  meta(name="twitter:creator" content="@adcpe_")
+
 block content
   section.content
     h1.font-alt.title About
