@@ -34,7 +34,7 @@ block scripts
 block content
   section.post
     h1.font-alt.title= post.data.title
-    h2.font-alt.subtitle= post.data.date
+    small.font-alt.subtitle= post.data.date
     div!= post.content
 
   script(src=`${filters.relativePath(page)}assets/prism/prism.js`)
