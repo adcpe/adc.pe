@@ -30,9 +30,14 @@ main
   list-style: none
   font-size: 1.6rem
   height: 100%
-  color: $black
+  color: $green
   text-decoration: none
   font-weight: 900
+  &:hover
+    text-decoration: underline
+    text-decoration-style: dotted
+    text-decoration-thickness: 3px
+    text-decoration-color: $red
 
 .navbar
   margin: 0 auto 4rem
@@ -73,7 +78,8 @@ main
     & a:hover
       color: $green
       text-decoration: underline
-      text-decoration-thickness: 2px
+      text-decoration-style: dotted
+      text-decoration-thickness: 3px
 
 .title
   margin-top: 0
@@ -98,11 +104,14 @@ main
 .navbar-link:hover
   color: $red
   text-decoration: underline
-  text-decoration-thickness: 2px
+  text-decoration-style: dotted
+  text-decoration-thickness: 3px
 
 .navbar-link__active
   text-decoration: underline
-  text-decoration-thickness: 2px
+  text-decoration-style: dotted
+  text-decoration-thickness: 3px
+  text-decoration-color: $red
 
 footer
   display: flex
