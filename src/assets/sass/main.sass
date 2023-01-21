@@ -7,36 +7,35 @@
   color: $foreground
 
 body
-  min-height: 100vh
   margin: 0
   padding: 0
   box-sizing: content-box
 
 main
   max-width: 800px
-  min-height: 78vh
+  min-height: 72vh
   margin: 0 auto
   display: flex
 
-  small
-    font-size: 1.1rem
+small
+  font-size: 1.1rem
 
-  h1
-    font-size: 2.5rem
+h1
+  font-size: 2.5rem
 
-  h2
-    font-size: 2rem
+h2
+  font-size: 2rem
 
-  h3
-    font-size: 1.75rem
+h3
+  font-size: 1.75rem
 
-  h4
-    font-size: 1.5rem
+h4
+  font-size: 1.5rem
 
-  p
-    font-size: 1.5rem
-    line-height: 32px
-    letter-spacing: 1px
+p
+  font-size: 1.5rem
+  line-height: 32px
+  letter-spacing: 1px
 
 .font-alt
   font-family: 'IBM Plex Sans', sans-serif
@@ -66,6 +65,7 @@ main
   line-height: 3.5em
   overflow: hidden
   display: flex
+  flex-wrap: wrap
   flex-direction: row
   justify-content: space-between
   border-bottom: 1px $yellow solid
@@ -74,6 +74,7 @@ main
 
 .link-group > ul
   display: flex
+  flex-wrap: wrap
   align-items: center
   list-style: none
   padding: 0
@@ -81,7 +82,6 @@ main
     margin: 0 0.5rem
 
 .content
-  min-height: 100%
   margin: 0 1rem
   & div
     font-size: 1.25rem
@@ -137,10 +137,6 @@ footer
   display: flex
   justify-content: center
   margin: 3rem auto 1rem
-  position: relative
-  bottom: 0
-  left: 0
-  right: 0
   & i
     color: $yellow
     margin: 0 10px
