@@ -16,7 +16,7 @@ block scripts
 
 block content
   section.content
-    each post in collections.posts.reverse()
+    each post in posts.reverse()
       div
-        a(href=`/blog/${post.data.id}-${post.data.slug}/` class='navbar-link post-title')= post.data.title
+        a(href=`/blog/${post.id}-${post.data.slug}/` class='navbar-link post-title')= post.data.title
         p= post.data.date

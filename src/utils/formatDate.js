@@ -1,4 +1,4 @@
-module.exports = (date) => {
+export default (date) => {
   const months = [
     'Jan',
     'Feb',

@@ -1,6 +1,7 @@
 {
   "name": "adcdotpe",
   "description": "My personal website hosted at adc.pe and andresdc.net.",
+  "type": "module",
   "scripts": {
     "watch-sass": "sass src/assets/sass/:src/assets/css/ --watch --poll",
     "build-sass": "sass src/assets/sass/:src/assets/css/ --style=compressed",
@@ -20,9 +21,10 @@
   "author": "Andrés Del Carpio",
   "license": "MIT",
   "devDependencies": {
-    "@11ty/eleventy": "2.0.0",
-    "axios": "^1.1.3",
-    "concurrently": "^7.6.0",
-    "sass": "^1.56.1"
+    "@11ty/eleventy": "3.0.0",
+    "axios": "^1.8.4",
+    "concurrently": "^9.1.2",
+    "sass": "^1.87.0",
+    "@11ty/eleventy-plugin-pug": "^1.0.0"
   }
 }

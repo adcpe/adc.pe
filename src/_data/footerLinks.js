@@ -1,4 +1,4 @@
-module.exports = [
+export default [
   {
     name: 'Email',
     class: 'fa-at',
