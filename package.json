@@ -7,7 +7,7 @@
     "build-sass": "sass src/assets/sass/:src/assets/css/ --style=compressed",
     "watch-11ty": "eleventy --serve",
     "build-11ty": "eleventy",
-    "build": "pnpm build-sass && pnpm build-11ty",
+    "build": "npm run build-sass && npm run build-11ty",
     "preview": "pnpm dlx serve dist",
     "dev": "concurrently pnpm:watch-sass pnpm:watch-11ty"
   },
