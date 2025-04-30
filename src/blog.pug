@@ -11,12 +11,12 @@ block scripts
   meta(property='og:url' content='https://adc.pe/blog/')
   //- meta(property='og:image' content='[image]')
   meta(name='twitter:card' content='summary')
-  meta(name="twitter:site" content="@adcpe_")
-  meta(name="twitter:creator" content="@adcpe_")
+  meta(name='twitter:site' content='@adcpe_')
+  meta(name='twitter:creator' content='@adcpe_')
 
 block content
   section.content
     each post in posts.reverse()
       div
-        a(href=`/blog/${post.id}-${post.data.slug}/` class='navbar-link post-title')= post.data.title
+        a(href=`/blog/${post.data.id}-${post.data.slug}/` class='navbar-link post-title')= post.data.title
         p= post.data.date

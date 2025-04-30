@@ -5,10 +5,10 @@ pagination:
   alias: post
   addAllPagesToCollections: true
 tags: posts
-permalink: "/blog/{{ post.id }}-{{ post.data.slug }}/"
+permalink: '/blog/{{ post.data.slug }}/'
 templateEngineOverride: md, pug
 eleventyComputed:
-  id: post.id
+  id: post.data.id
   content: post.content
   title: post.data.title
   slug: post.data.slug
@@ -18,18 +18,18 @@ extends _includes/base.pug
 
 block scripts
   title #{post.data.title} | adc.pe
-  link(rel="stylesheet", href=`${filters.relativePath(page)}assets/css/post.css`)
-  link(rel="stylesheet", href=`${filters.relativePath(page)}assets/prism/prism.css`)
+  link(rel='stylesheet', href=`${filters.relativePath(page)}assets/css/post.css`)
+  link(rel='stylesheet', href=`${filters.relativePath(page)}assets/prism/prism.css`)
 
-  meta(property='og:title' content=post.data.title)
-  meta(property='og:site_name' content=post.data.title)
+  meta(property='og:title' content=`${post.data.title} | adc.pe`)
+  meta(property='og:site_name' content=`${post.data.title} | adc.pe`)
   meta(property='og:description' content=post.data.excerpt)
   meta(property='og:type' content='website')
-  meta(property='og:url' content=`https://adc.pe/blog/${post.id}-${post.data.slug}/`)
+  meta(property='og:url' content=`https://adc.pe/blog/${post.data.id}-${post.data.slug}/`)
   //- meta(property='og:image' content='[image]')
   meta(name='twitter:card' content='summary')
-  meta(name="twitter:site" content="@adcpe_")
-  meta(name="twitter:creator" content="@adcpe_")
+  meta(name='twitter:site' content='@adcpe_')
+  meta(name='twitter:creator' content='@adcpe_')
 
 block content
   section.post
