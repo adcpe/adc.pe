@@ -9,7 +9,7 @@
     "build-11ty": "eleventy",
     "build": "pnpm build-sass && pnpm build-11ty",
     "preview": "pnpm dlx serve dist",
-    "dev": "concurrently pnpm:watch-sass pnpm:watch-11ty"
+    "dev": "concurrently 'pnpm:watch-sass' 'pnpm:watch-11ty'"
   },
   "keywords": [
     "website",

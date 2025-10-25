@@ -5,11 +5,11 @@ pagination:
   alias: post
   addAllPagesToCollections: true
 tags: posts
-permalink: '/blog/{{ post.data.id }}-{{ post.data.slug }}/'
+permalink: blog/{{ pagination.pageNumber }}-{{ post.data.slug }}/
 templateEngineOverride: md, pug
 eleventyComputed:
   id: post.data.id
-  content: post.content
+  body: post.body
   title: post.data.title
   slug: post.data.slug
   date: post.data.date
@@ -31,10 +31,10 @@ block scripts
   meta(name='twitter:site' content='@adcpe_')
   meta(name='twitter:creator' content='@adcpe_')
 
-block content
+block body
   section.post
     h1.font-alt.title= post.data.title
     small.font-alt.subtitle= post.data.date
-    div!= post.content
+    div!= post.body
 
   script(src=`${filters.relativePath(page)}assets/prism/prism.js`)
