@@ -2,7 +2,7 @@
 @import 'variables'
 
 :root
-  font-family: 'PT Sans', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif
+  font-family: 'Fira Sans', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif
   background: $background
   color: $foreground
 
@@ -37,11 +37,11 @@ p
   line-height: 32px
 
 .font-alt
-  font-family: 'IBM Plex Sans', sans-serif
+  font-family: 'Fira Sans', sans-serif
 
 .post-title
-  color: $bright-blue !important
-  font-family: 'IBM Plex Sans', sans-serif
+  // color: $bright-yellow
+  font-family: 'Fira Sans', sans-serif
   font-weight: bold
 
 .logo
@@ -49,14 +49,15 @@ p
   list-style: none
   font-size: 1.6rem
   height: 100%
-  color: $bright-green
+  color: $yellow
   text-decoration: none
   font-weight: bold
   &:hover
-    text-decoration: underline
-    text-decoration-style: dotted
-    text-decoration-thickness: 3px
-    text-decoration-color: $bright-yellow
+    color: $red
+    // text-decoration: underline
+    // text-decoration-style: dotted
+    // text-decoration-thickness: 3px
+    // text-decoration-color: $bright-yellow
 
 .navbar
   margin: 0 auto 4rem
@@ -68,7 +69,7 @@ p
   flex-wrap: wrap
   flex-direction: row
   justify-content: space-between
-  border-bottom: 1px $bright-green solid
+  border-bottom: 1px $bright-blue solid
   & a
     margin-right: auto
 
@@ -93,13 +94,13 @@ p
       line-height: 32px
     & a
       font-size: 1.5rem
-      color: $bright-green
+      color: $bright-yellow
       text-decoration: none
     & a:hover
-      color: $bright-yellow
-      text-decoration: underline
-      text-decoration-style: dotted
-      text-decoration-thickness: 3px
+      color: $bright-red
+    //   text-decoration: underline
+    //   text-decoration-style: dotted
+    //   text-decoration-thickness: 3px
 
 .title
   margin-top: 0
@@ -107,7 +108,7 @@ p
   line-height: 1
   font-weight: bold
   margin-bottom: 0.5rem
-  color: $bright-blue
+  color: $bright-yellow
 
 .subtitle
   font-size: 1.5rem
@@ -115,32 +116,32 @@ p
   opacity: 0.75
   margin-bottom: 0.75rem
   font-style: italic
-  color: $bright-blue
+  color: $bright-yellow
 
 .navbar-link
   font-size: 22px
-  color: $bright-green
+  color: $bright-yellow
   margin: 1em auto
   text-decoration: none
 
 .navbar-link:hover
-  color: $bright-yellow
-  text-decoration: underline
-  text-decoration-style: dotted
-  text-decoration-thickness: 3px
+  color: $bright-red
+  // text-decoration: underline
+  // text-decoration-style: dotted
+  // text-decoration-thickness: 3px
 
-.navbar-link__active
-  text-decoration: underline
-  text-decoration-style: dotted
-  text-decoration-thickness: 3px
-  text-decoration-color: $bright-yellow
+// .navbar-link__active
+//   text-decoration: underline
+//   text-decoration-style: dotted
+//   text-decoration-thickness: 3px
+//   text-decoration-color: $bright-yellow
 
 footer
   display: flex
   justify-content: center
   margin: 3rem auto 1rem
   & i
-    color: $bright-green
+    color: $bright-yellow
     margin: 0 10px
   & i:hover
-    color: $bright-yellow
+    color: $bright-red
