@@ -26,5 +26,6 @@
     "axios": "^1.8.4",
     "concurrently": "^9.1.2",
     "sass": "^1.87.0"
-  }
+  },
+  "packageManager": "pnpm@10.22.0"
 }
