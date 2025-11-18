@@ -5,7 +5,7 @@ pagination:
   alias: post
   addAllPagesToCollections: true
 tags: posts
-permalink: blog/{{ pagination.pageNumber }}-{{ post.data.slug }}/
+permalink: blog/{{ post.data.id }}/
 templateEngineOverride: md, pug
 eleventyComputed:
   id: post.data.id
@@ -25,7 +25,7 @@ block scripts
   meta(property='og:site_name' content=`${post.data.title} | adc.pe`)
   meta(property='og:description' content=post.data.excerpt)
   meta(property='og:type' content='website')
-  meta(property='og:url' content=`https://adc.pe/blog/${post.data.id}-${post.data.slug}/`)
+  meta(property='og:url' content=`https://adc.pe/blog/${post.data.id}/`)
   //- meta(property='og:image' content='[image]')
   meta(name='twitter:card' content='summary')
   meta(name='twitter:site' content='@adcpe_')

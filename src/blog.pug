@@ -18,5 +18,5 @@ block body
   section.content
     each post in posts.reverse()
       div.blog
-        a(href=`/blog/${post.data.id}-${post.data.slug}/` class='post-title')= post.data.title
+        a(href=`/blog/${post.data.id}/` class='post-title')= post.data.title
         p= post.data.date
