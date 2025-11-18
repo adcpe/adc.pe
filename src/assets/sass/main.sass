@@ -12,35 +12,34 @@ body
   box-sizing: content-box
 
 main
-  max-width: 800px
-  min-height: 72vh
+  max-width: 1024px
+  // min-height: 72vh
   margin: 0 auto
   display: flex
 
 small
-  font-size: 1.1rem
+  font-size: 0.9rem
 
 h1
-  font-size: 2.5rem
+  font-size: 2.3rem
 
 h2
-  font-size: 2rem
+  font-size: 1.8rem
 
 h3
-  font-size: 1.75rem
+  font-size: 1.55rem
 
 h4
-  font-size: 1.5rem
+  font-size: 1.3rem
 
 p
-  font-size: 1.5rem
+  font-size: 1.3rem
   line-height: 32px
 
 .font-alt
   font-family: 'Fira Sans', sans-serif
 
 .post-title
-  // color: $bright-yellow
   font-family: 'Fira Sans', sans-serif
   font-weight: bold
 
@@ -54,15 +53,11 @@ p
   font-weight: bold
   &:hover
     color: $red
-    // text-decoration: underline
-    // text-decoration-style: dotted
-    // text-decoration-thickness: 3px
-    // text-decoration-color: $bright-yellow
 
 .navbar
   margin: 0 auto 4rem
   padding: 0 1rem
-  max-width: 800px
+  max-width: 1024px
   line-height: 3.5em
   overflow: hidden
   display: flex
@@ -85,7 +80,7 @@ p
 .content
   margin: 0 1rem
   & div
-    font-size: 1.25rem
+    font-size: 1.05rem
     line-height: 1.75rem
     margin-top: 0.875rem
     & p
@@ -93,48 +88,54 @@ p
       margin-bottom: 0.75rem
       line-height: 32px
     & a
-      font-size: 1.5rem
+      font-size: 1.3rem
       color: $bright-yellow
       text-decoration: none
     & a:hover
       color: $bright-red
-    //   text-decoration: underline
-    //   text-decoration-style: dotted
-    //   text-decoration-thickness: 3px
 
 .title
   margin-top: 0
-  font-size: 3rem
+  font-size: 2.8rem
   line-height: 1
   font-weight: bold
   margin-bottom: 0.5rem
-  color: $bright-yellow
 
 .subtitle
-  font-size: 1.5rem
+  font-size: 1.3rem
   line-height: 2rem
   opacity: 0.75
   margin-bottom: 0.75rem
   font-style: italic
-  color: $bright-yellow
+
+.highlight
+  color: $yellow
+  font-style: italic
 
 .navbar-link
-  font-size: 22px
+  font-size: 1.35rem
   color: $bright-yellow
   margin: 1em auto
   text-decoration: none
 
 .navbar-link:hover
   color: $bright-red
-  // text-decoration: underline
-  // text-decoration-style: dotted
-  // text-decoration-thickness: 3px
 
 // .navbar-link__active
 //   text-decoration: underline
 //   text-decoration-style: dotted
 //   text-decoration-thickness: 3px
 //   text-decoration-color: $bright-yellow
+
+.blog
+  display: flex
+  flex-direction: row
+  justify-content: flex-start
+  align-items: center
+  flex-wrap: wrap
+  margin: 0 !important
+  & p
+    margin-left: 1rem
 
 footer
   display: flex
@@ -145,3 +146,9 @@ footer
     margin: 0 10px
   & i:hover
     color: $bright-red
+
+@media screen and (width < 600px)
+  .blog
+    display: revert
+    & p
+      margin-left: 0

@@ -6,7 +6,7 @@ extends _includes/base.pug
 block scripts
   meta(property='og:title' content=title)
   meta(property='og:site_name' content=title)
-  meta(property='og:description' content='Blog of adc.pe | Andrés Del Carpio')
+  meta(property='og:description' content='Blog | Andrés Del Carpio')
   meta(property='og:type' content='website')
   meta(property='og:url' content='https://adc.pe/blog/')
   //- meta(property='og:image' content='[image]')
@@ -17,6 +17,6 @@ block scripts
 block body
   section.content
     each post in posts.reverse()
-      div
-        a(href=`/blog/${post.data.id}-${post.data.slug}/` class='navbar-link post-title')= post.data.title
+      div.blog
+        a(href=`/blog/${post.data.id}-${post.data.slug}/` class='post-title')= post.data.title
         p= post.data.date
